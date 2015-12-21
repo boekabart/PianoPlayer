@@ -1,0 +1,10 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/PianoPlayer/v14
+/bin
+/obj
+/packages
+/PianoPlayer.v12.suo
+/PianoPlayer.csproj.user
