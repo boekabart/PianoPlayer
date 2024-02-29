@@ -363,7 +363,10 @@ namespace PianoPlayer
 
         private void sequencer1_PlayingCompleted(object sender, EventArgs e)
         {
-            buPauseContinue.Enabled = false;
+            if (InvokeRequired)
+                Invoke(new MethodInvoker(() => sequencer1_PlayingCompleted(sender, e)));
+            else
+                buPauseContinue.Enabled = false;
         }
 
         bool isStopped;
